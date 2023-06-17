@@ -10,18 +10,13 @@
     </head>
     <body>
         <script>
-            function audioPlay() {
-                var audio = document.getElementById("audio");
-                audio.volume = 0.05
-                audio.play()
-            }
+	<audio id="dissimilence" src="dissimilence.mp3" loop="loop"></audio>
         </script>
-        <audio loop preload="auto" id="audio">
-            <source src="dissimilence.mp3" type="audio/mp3">
-        </audio>
-
-	audio.Play()
-
+	<script>
+window.onload = function() {
+    document.getElementById("my_audio").play();
+}
+	</script>
         <div id="center">
             <pre class="text-center ascii" style="color: white">
             
